@@ -11,6 +11,6 @@
 
 .env.local
 open.spotify.com_cookies.txt
-/download_cursor
+/download
 *cookies.txt
 *.log

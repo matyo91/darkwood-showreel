@@ -7,18 +7,27 @@ Static first-pass showreel landing page built with:
 - Vanilla JavaScript
 - GSAP + ScrollTrigger via CDN
 
+The project also includes a dedicated 16:9 motion reel:
+
+- `showreel.html`
+- `showreel.css`
+- `showreel.js`
+
 ## Structure
 
 ```text
 darkwood-showreel/
 ├── assets/
 │   ├── audio/
-│   │   └── showreel-track.mp3        # optional soundtrack file
+│   │   └── showreel-track.mp3        # RFURecordingz — Contraption — Higher, Forever (Breeze & Styles Remix); https://www.youtube.com/watch?v=kNmG75Tq4Kc
 │   ├── media/
 │   │   └── .gitkeep                  # future screenshots, portraits, logo plates, clips
 │   └── posters/
 │       └── .gitkeep                  # future poster frames / stills
 ├── index.html
+├── showreel.html
+├── showreel.css
+├── showreel.js
 ├── playlist_tracks.json
 ├── script.js
 ├── style.css
@@ -27,7 +36,7 @@ darkwood-showreel/
 
 ## Run
 
-Open `index.html` in a browser, or serve the folder with any static server for best results.
+Open `index.html` for the scroll-based identity page, or `showreel.html` for the 16:9 motion reel. Serving the folder from a local static server gives the best playback consistency.
 
 Examples:
 
@@ -51,6 +60,12 @@ php -S localhost:8000
   insert final identity, contact, or signature lockup.
 - Audio:
   add a file at `assets/audio/showreel-track.mp3` to activate the soundtrack toggle immediately.
+
+## Motion reel notes
+
+- `showreel.html` is a timeline-first composition designed as a centered 16:9 stage.
+- Use the `Play reel` interaction to satisfy browser audio restrictions and start the soundtrack plus the GSAP timeline together.
+- For screen capture or export, open `showreel.html`, optionally go full screen, then record the browser window with the capture workflow of your choice.
 
 ## Notes
 
