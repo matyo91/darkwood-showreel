@@ -167,6 +167,12 @@ body::before {
   pointer-events: none;
 }
 
+.rupture-overlay,
+.assembly-cursor {
+  position: absolute;
+  pointer-events: none;
+}
+
 .stage-vignette {
   background:
     radial-gradient(circle at 18% 20%, rgba(201, 168, 106, 0.12), transparent 28%),
@@ -180,6 +186,15 @@ body::before {
     linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
   background-size: 100% 14%, 10% 100%;
   opacity: 0.24;
+}
+
+.rupture-overlay {
+  inset: 0;
+  z-index: 5;
+  background:
+    radial-gradient(circle at center, rgba(201, 168, 106, 0.18), transparent 22%),
+    radial-gradient(circle at center, rgba(0, 0, 0, 0.98), rgba(0, 0, 0, 1));
+  mix-blend-mode: normal;
 }
 
 .stage-timecode {
@@ -450,6 +465,15 @@ body::before {
     linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
   background-size: 100% 18%, 12% 100%;
   opacity: 0.3;
+}
+
+.assembly-cursor {
+  z-index: 4;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 999px;
+  background: radial-gradient(circle, rgba(201, 168, 106, 1), rgba(201, 168, 106, 0.08));
+  box-shadow: 0 0 24px rgba(201, 168, 106, 0.4);
 }
 
 .assembly-module {
